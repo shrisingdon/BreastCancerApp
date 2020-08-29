@@ -1,0 +1,44 @@
+
+body {
+  height: 100%;
+  background: #fdd4dc;
+  margin: 0;
+  padding: 0;
+}
+​
+.container {
+  width: 45%;
+  height: 40%;
+  padding: 20px;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  border-radius: 20px;
+}
+​
+.logo {
+  font-style: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+​
+.maglinant {
+  align-items: center;
+  text-align: center;
+  font-weight: unset;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+.btn {
+  background-color: #fdd4dc;
+  padding: 10px;
+  border: 0px;
+  border-radius: 20px;
+}
+.emoji {
+  width: 25%;
+  height: 25%;
+  justify-content: center;
+  margin-top: -15%;
+}
