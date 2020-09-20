@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,10 @@
     <title>Breast Cancer Detection</title>
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
 
 
 </head>
@@ -42,14 +43,13 @@
       </div>
     </nav>
 
-
     <!-- Cover Section -->
     <section id="cover">
         <div id="cover-caption">
             <div class="container">
                 <div class="col-sm-10 col-sm-offset-1">
                     <h1 class="display-3">Breast Cancer Detection</h1>
-                    <p id="tagline">Just like the old Bootstrap, but better. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, repudiandae reprehenderit doloremque fugiat molestias, corporis voluptas.</p>
+                    <p id="tagline">Helping women get their diagnosis on time. We use machine learning algorithms to provide you with an accurate result. For a trial, click on the DEMO button below!</p>
                         <a class="btn btn-danger btn-lg" href="demo.html" role="button">DEMO</a>
                     <br>
                     <a href="#nav-main" class="btn btn-secondary-outline btn-sm" role="button">&darr;</a>
@@ -57,6 +57,17 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Our Mission -->
+
+        <div id="mission-desc">
+             <div class="row">
+                <div class="col-sm-4">Our Mission</div>
+                <div class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui accusantium commodi non quod mollitia animi, totam quia labore ex est ut delectus consectetur explicabo eveniet maiores, cumque aut repudiandae. Natus!</div>
+             </div>
+        </div>
+
 
     <!-- Introduction -->
     <section id="what-we-do">
@@ -72,7 +83,7 @@
                      <!-- Feature Cards -->
                      <div class="card-group">
                           <div class="card">
-                              <img src="img/hospital.png" class="card-img-top" alt="icon">
+                              <img src="static/img/hospital.png" class="card-img-top" alt="icon">
                               <div class="card-body">
                               <h5 class="card-title">Data Entry</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Enter your report data!</h6>
@@ -81,7 +92,7 @@
                           </div>
 
                           <div class="card">
-                              <img src="img/hospital.png" class="card-img-top" alt="icon">
+                              <img src="static/img/hospital.png" class="card-img-top" alt="icon">
                               <div class="card-body">
                               <h5 class="card-title">Submission</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Hit the Submit button!</h6>
@@ -90,7 +101,7 @@
                           </div>
 
                           <div class="card">
-                              <img src="img/hospital.png" class="card-img-top" alt="icon">
+                              <img src="static/img/hospital.png" class="card-img-top" alt="icon">
                               <div class="card-body">
                               <h5 class="card-title">Result</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Your results are here!</h6>
@@ -103,6 +114,14 @@
          </div>
     </section>
 
+    <!-- Breast cancer stats
+    <div id="stats">
+        <div class="row-cols-2">
+            <div class="col-sm">Test</div>
+            <div class="col-sm">Test</div>
+        </div>
+    </div> -->
+
     <!--    Testimonial-->
     <section id="what-we-do">
         <div class="section-content">
@@ -114,12 +133,12 @@
                 <ul>
                     <li>
                         <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkSflTI9DIJAstZ8fesrSz70HR8oH9BN_d8w0cjGEtiZyqDcs8">
-                        <p>"Integer in cursus massa. Curabitur viverra, libero sed eleifend pellentesque, metus quam commodo lorem, ut laoreet ipsum metus ac augue."</p>
+                        <p>"Integer in cursus massa. Curabitur viverra, libero sed eleifend pellentesque, metus quam commodo lorem, ut laoreet ipsum metus ac augue."</p><br/><br/>
                         <h1>Martin Kovaks</h1>
                     </li>
                     <li>
                         <img src = "https://i.pinimg.com/236x/2d/e5/7f/2de57f8025bd64dffd554de0f080ee7f--my-pinterest-pinterest-board.jpg?b=t">
-                        <p>"Sed vitae augue arcu. In pharetra ultricies mi eget interdum. Donec feugiat, orci at mattis laoreet, mauris mauris interdum arcu, ac viverra nibh purus a eros."</p>
+                        <p>"Sed vitae augue arcu. In pharetra ultricies mi eget interdum. Donec feugiat, orci at mattis laoreet, mauris mauris interdum arcu, ac viverra nibh purus a eros."</p><br/><br/>
                         <h1>Adrea Glauber</h1>
                     </li>
                 </ul>
@@ -149,52 +168,131 @@
     <!-- Blog Post -->
     <section id="blog">
             <div class="section-content">
+                <h1 class="display-5">Recommended for you</h1>
+<!--
                 <div class="container2">
                     <div class="col-sm-11 col-sm-offset-1">
-                        <h1 class="display-5">Recommended for you</h1>
+
+
                         <div class="row">
                                  <div class="col-sm-12">
                                      <div class="card-deck">
+
                                          <div class="card">
-                                            <div class="card-shadow">
+
                                                 <div class="card-body">
                                                     <div class="card-image">
-                                                        <img src="img/chalkboard.jpg" alt="a chalkboard">
+                                                        <img src="static/img/chalkboard.jpg" alt="a chalkboard">
                                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                                         <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">learn more</button>
                                                     </div>
                                                 </div>
-                                            </div>
+
                                          </div>
 
                                          <div class="card">
-                                             <div class="card-shadow">
+
                                                  <div class="card-body">
                                                      <div class="card-image">
-                                                         <img src="img/working.jpg" alt="working on a laptop">
+                                                         <img src="static/img/working.jpg"alt="working on a laptop">
                                                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium, numquam voluptates velit, dicta maiores dolor quo expedita.</p>
                                                          <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">learn more</button>
                                                      </div>
                                                  </div>
-                                             </div>
+
                                          </div>
 
                                          <div class="card">
-                                             <div class="card-shadow">
+
                                                  <div class="card-body">
                                                      <div class="card-image">
-                                                            <img src="img/programming.jpg" alt="fingers typing on a keyboard">
+                                                            <img src="static/img/programming.jpg" alt="fingers typing on a keyboard">
                                                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium.</p>
                                                             <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">learn more</button>
                                                          </div>
                                                  </div>
-                                             </div>
+
                                          </div>
                                      </div>
                                  </div>
                         </div>
+
+                    </div>
+
+                </div>
+
+
+                </div> -->
+            <div class="card2">
+                <div class="image-data">
+                    <div class="background-image"></div>
+                    <div class="publication-details">
+                        <a href="#" class="author">
+                            <i class="fas fa-user"></i>John Doe
+                        </a>
+                        <span class="date">
+                            <i class="fas fa-calender-alt"></i> March 1, 2020
+                        </span>
                     </div>
                 </div>
+                <div class="post-data">
+                    <h2 class="title">Breast Cancer Detection</h2>
+                    <h3 class="subtitle">Next Generation Technology</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium.</p>
+                    <div class="cta">
+                        <a href="#">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="card2">
+                <div class="image-data">
+                    <div class="background-image"></div>
+                    <div class="publication-details">
+                        <a href="#" class="author">
+                            <i class="fas fa-user"></i>John Doe
+                        </a>
+                        <span class="date">
+                            <i class="fas fa-calender-alt"></i> March 1, 2020
+                        </span>
+                    </div>
+                </div>
+                <div class="post-data">
+                    <h2 class="title">Breast Cancer Detection</h2>
+                    <h3 class="subtitle">Next Generation Technology</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium.</p>
+                    <div class="cta">
+                        <a href="#">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="card2">
+                <div class="image-data">
+                    <div class="background-image"></div>
+                    <div class="publication-details">
+                        <a href="#" class="author">
+                            <i class="fas fa-user"></i>John Doe
+                        </a>
+                        <span class="date">
+                            <i class="fas fa-calender-alt"></i> March 1, 2020
+                        </span>
+                    </div>
+                </div>
+                <div class="post-data">
+                    <h6 class="title">Breast Cancer Detection</h6>
+                    <h3 class="subtitle">Next Generation Technology</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium.</p>
+                    <div class="cta">
+                        <a href="#">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+                <button type="button" class="btn btn-dark btn-lg">Load More</button>
+
+
+
             </div>
     </section>
 
@@ -262,6 +360,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script type= text/javascript src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>
 </html>
