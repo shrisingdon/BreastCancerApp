@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Breast Cancer Detection</title>
-
+    {% load static %}
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
 
 
 </head>
@@ -50,7 +50,7 @@
                 <div class="col-sm-10 col-sm-offset-1">
                     <h1 class="display-3">Breast Cancer Detection</h1>
                     <p id="tagline">Just like the old Bootstrap, but better. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, repudiandae reprehenderit doloremque fugiat molestias, corporis voluptas.</p>
-                        <a class="btn btn-danger btn-lg" href="demo.html" role="button">DEMO</a>
+                        <a class="btn btn-danger btn-lg" href="{% url 'demo' %}" role="button">DEMO</a>
                     <br>
                     <a href="#nav-main" class="btn btn-secondary-outline btn-sm" role="button">&darr;</a>
                 </div>
@@ -72,7 +72,7 @@
                      <!-- Feature Cards -->
                      <div class="card-group">
                           <div class="card">
-                              <img src="img/hospital.png" class="card-img-top" alt="icon">
+                              <img src="../../../static/img/hospital.png" class="card-img-top" alt="icon">
                               <div class="card-body">
                               <h5 class="card-title">Data Entry</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Enter your report data!</h6>
@@ -81,7 +81,7 @@
                           </div>
 
                           <div class="card">
-                              <img src="img/hospital.png" class="card-img-top" alt="icon">
+                              <img src="../../../static/img/hospital.png" class="card-img-top" alt="icon">
                               <div class="card-body">
                               <h5 class="card-title">Submission</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Hit the Submit button!</h6>
@@ -90,7 +90,7 @@
                           </div>
 
                           <div class="card">
-                              <img src="img/hospital.png" class="card-img-top" alt="icon">
+                              <img src="../../../static/img/hospital.png" class="card-img-top" alt="icon">
                               <div class="card-body">
                               <h5 class="card-title">Result</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Your results are here!</h6>
@@ -102,6 +102,36 @@
              </div>
          </div>
     </section>
+
+    <!--FAQ-->
+        <div class="row">
+      <div class="example-2 card3">
+        <div class="wrapper">
+          <div class="header">
+            <div class="date">
+              <span class="day">12</span>
+              <span class="month">Aug</span>
+              <span class="year">2016</span>
+            </div>
+            <ul class="menu-content">
+              <li>
+                <a href="#" class="fa fa-bookmark-o"></a>
+              </li>
+              <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
+              <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
+            </ul>
+          </div>
+          <div class="data2">
+            <div class="content2">
+              <span class="author2">Jane Doe</span>
+              <h1 class="title2"><a href="#">Stranger Things: The sound of the Upside Down</a></h1>
+              <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+              <a href="#" class="button">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--    Testimonial-->
     <section id="what-we-do">
@@ -159,7 +189,7 @@
                                             <div class="card-shadow">
                                                 <div class="card-body">
                                                     <div class="card-image">
-                                                        <img src="img/chalkboard.jpg" alt="a chalkboard">
+                                                        <img src="../../../static/img/chalkboard.jpg" alt="a chalkboard">
                                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                                         <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">learn more</button>
                                                     </div>
@@ -171,7 +201,7 @@
                                              <div class="card-shadow">
                                                  <div class="card-body">
                                                      <div class="card-image">
-                                                         <img src="img/working.jpg" alt="working on a laptop">
+                                                         <img src="../../../static/img/working.jpg" alt="working on a laptop">
                                                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium, numquam voluptates velit, dicta maiores dolor quo expedita.</p>
                                                          <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">learn more</button>
                                                      </div>
@@ -183,7 +213,7 @@
                                              <div class="card-shadow">
                                                  <div class="card-body">
                                                      <div class="card-image">
-                                                            <img src="img/programming.jpg" alt="fingers typing on a keyboard">
+                                                            <img src="../../../static/img/programming.jpg" alt="fingers typing on a keyboard">
                                                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium.</p>
                                                             <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">learn more</button>
                                                          </div>
@@ -262,6 +292,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static 'js/bootstrap.bundle.js'%}"></script>
 </body>
 </html>

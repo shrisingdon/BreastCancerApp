@@ -9,10 +9,10 @@
     />
 ​
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../static/css/bootstrap.min.css" />
 ​
     <title>Form section</title>
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="../../../static/css/style2.css" />
     <style>
       input[type="number"] {
         width: 100%;
@@ -26,25 +26,26 @@
       <br />
       <h5 class="data" style="color: grey;">Input data</h5>
 ​
-      <form action="/action_page.php">
+      <form action="{% url 'result' %}">
+          {% csrf_token %}
         <div class="form-group">
           <label for="area">Area</label>
-          <input type="number" class="form-control" id="area" />
+          <input type="number" class="form-control" required name="area" />
         </div>
         <div class="form-group">
           <label for="radius">Radius</label>
-          <input type="number" class="form-control" id="radius" />
+          <input type="number" class="form-control" required name="radius" />
         </div>
         <div class="form-group">
           <label for="perimeter">Perimeter</label>
-          <input type="number" class="form-control" id="perimeter" />
+          <input type="number" class="form-control" required name="perimeter" />
         </div>
         <div class="form-group">
           <label for="Concavity">Concavity</label>
-          <input type="number" class="form-control" id="Concavity" />
+          <input type="number" class="form-control" required name="concavity" />
         </div>
         <div class="center">
-          <button type="submit" class="btn btn-default">Compute</button>
+          <button type="submit" class="btn btn-default" >Compute</button>
         </div>
       </form>
     </div>
